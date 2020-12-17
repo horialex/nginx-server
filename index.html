@@ -1,0 +1,13 @@
+<html>
+<h1>Feeds</h1>
+  <p>In folderul feeds - care este un volum atast containerului de docker - vei gasii fisierle de feeds</p>
+  <br/>
+  <p>Configuratia este pe un webserver de nginx - si se gaseste in container la calea usr/share/nginx/html</p>
+  </br>
+  <p>Pt a vedea un feed file acceseaza http://{CONTAINER_IP}/{NUME_FEED}</p>
+  <br/>
+  <p>Comanda de docker pt a obine ip-ul containerului: docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' feeds</p>
+  </br>
+   <p>Containerul se numeste 'feeds'</p>
+  <br/>
+</html>
